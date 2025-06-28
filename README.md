@@ -29,3 +29,17 @@ function addLiquidity(
     address to,
     uint deadline
 ) external returns (uint amountA, uint amountB, uint liquidity);
+
+```solidity
+### 2. removeLiquidity(...)
+Permite retirar liquidez y recuperar tokens A y B.
+
+function removeLiquidity(
+    address tokenA,
+    address tokenB,
+    uint liquidity,
+    uint amountAMin,
+    uint amountBMin,
+    address to,
+    uint deadline
+) external returns (uint amountA, uint amountB);
